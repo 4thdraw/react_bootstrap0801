@@ -11,7 +11,7 @@ export function Skill(props) {
             {
                 props.title.p.map((v, i)=>{
                     return(
-                        <p>{v}</p>
+                        <p key={i}>{v}</p>
                     )
 
                 })

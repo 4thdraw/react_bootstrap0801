@@ -103,7 +103,7 @@ function App() {
               {
                 db.navi.map( (v, i) =>{
                   return(
-                    <Nav.Item as="li">
+                    <Nav.Item as="li" key={i}>
                     <Nav.Link href={"#"+v.href}>{v.atxt}</Nav.Link>
                   </Nav.Item>
                   )
@@ -115,14 +115,15 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container>
+     
         <Slider ></Slider>
+        <Container>
         <Skill title={db.skill} id={db.navi[0].href}>
                                 
         </Skill>
 
         <Interview h2="사전인터뷰" id={db.navi[2].href}>
-          
+
         </Interview>
         <Form h2='면접제안' id={db.navi[3].href} ></Form>
       </Container>
