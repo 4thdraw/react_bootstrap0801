@@ -5,6 +5,7 @@ import {Slider} from './component/Slider'
 import {Skill} from './component/Skill'
 import {Form} from './component/Form'
 import {Interview} from './component/Interview'
+import db from './data/db.json'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
@@ -116,8 +117,11 @@ function App() {
         </Container>
       </Navbar>
       <Container>
-        <Slider h2='스와이퍼 슬라이드'></Slider>
-        <Skill h2='나의 소개'></Skill>
+        <Slider ></Slider>
+        <Skill title={db.skill}>
+                                
+        </Skill>
+
         <Interview h2="사전인터뷰"></Interview>
         <Form h2='면접제안'></Form>
       </Container>
