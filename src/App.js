@@ -1,6 +1,11 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 
+import {Slider} from './component/Slider'
+import {Skill} from './component/Skill'
+import {Form} from './component/Form'
+import {Interview} from './component/Interview'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
@@ -111,22 +116,10 @@ function App() {
         </Container>
       </Navbar>
       <Container>
-        <div id="section1" className="section">
-          <h2>Section 1</h2>
-          {/* Add your content for section 1 */}
-        </div>
-        <div id="section2" className="section">
-          <h2>Section 2</h2>
-          {/* Add your content for section 2 */}
-        </div>
-        <div id="section3" className="section">
-          <h2>Section 3</h2>
-          {/* Add your content for section 3 */}
-        </div>
-        <div id="section4" className="section">
-          <h2>Section 4</h2>
-          {/* Add your content for section 4 */}
-        </div>
+        <Slider h2='스와이퍼 슬라이드'></Slider>
+        <Skill h2='나의 소개'></Skill>
+        <Interview h2="사전인터뷰"></Interview>
+        <Form h2='면접제안'></Form>
       </Container>
     </div>
   );
