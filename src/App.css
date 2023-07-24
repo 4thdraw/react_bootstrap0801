@@ -1,0 +1,13 @@
+.navbar-brand  svg  path{
+    fill: red;
+
+ }
+ .navbar-brand  svg{
+    height: 3.2rem;
+ }
+ .navbar-brand:hover  svg path{
+    /* fill: yellow; */
+ }
+ .navbar-brand:hover  svg .arr{
+    display: none;
+ }
