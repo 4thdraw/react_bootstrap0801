@@ -100,30 +100,31 @@ function App() {
           <Navbar.Toggle aria-controls="scrollspy-nav" />
           <Navbar.Collapse id="scrollspy-nav">
             <Nav className="ml-auto" as="ul">
-              <Nav.Item as="li">
-                <Nav.Link href="#section1">Section 1</Nav.Link>
-              </Nav.Item>
-              <Nav.Item as="li">
-                <Nav.Link href="#section2">Section 2</Nav.Link>
-              </Nav.Item>
-              <Nav.Item as="li">
-                <Nav.Link href="#section3">Section 3</Nav.Link>
-              </Nav.Item>
-              <Nav.Item as="li">
-                <Nav.Link href="#section4">Section 4</Nav.Link>
-              </Nav.Item>
+              {
+                db.navi.map( (v, i) =>{
+                  return(
+                    <Nav.Item as="li">
+                    <Nav.Link href={"#"+v.href}>{v.atxt}</Nav.Link>
+                  </Nav.Item>
+                  )
+                })
+              }
+
+
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <Container>
         <Slider ></Slider>
-        <Skill title={db.skill}>
+        <Skill title={db.skill} id={db.navi[0].href}>
                                 
         </Skill>
 
-        <Interview h2="사전인터뷰"></Interview>
-        <Form h2='면접제안'></Form>
+        <Interview h2="사전인터뷰" id={db.navi[2].href}>
+          
+        </Interview>
+        <Form h2='면접제안' id={db.navi[3].href} ></Form>
       </Container>
     </div>
   );

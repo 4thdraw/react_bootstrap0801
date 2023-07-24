@@ -1,4 +1,22 @@
 {
+    "navi" : [
+        {
+            "href" : "skill",
+            "atxt" : "나의소개"
+        },
+        {
+            "href" : "work",
+            "atxt" : "작품들"
+        },
+        {
+            "href" : "interview",
+            "atxt" : "사전인터뷰"
+        },
+        {
+            "href" : "contact",
+            "atxt" : "면접제안"
+        }
+    ],
     "skill" : {  
         "h2" : "방보영", 
          "p" : ["안녕하세요",

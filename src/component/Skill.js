@@ -5,7 +5,7 @@ export function Skill(props) {
 
     return (
         <>
-           <div id="section2" className="section">
+           <div  id={props.id} className="section">
            <h2>{ props.title.h2 }</h2>
            <div>
             {
