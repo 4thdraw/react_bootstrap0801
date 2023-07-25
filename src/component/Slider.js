@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import db from '../data/db.json'
 
 import 'swiper/css';
 
@@ -36,14 +37,14 @@ export function Slider(props) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
     >
-      <SwiperSlide className='section  yellow d-flex flex-column justify-content-center'>Slide 1</SwiperSlide>
-      <SwiperSlide className='section yellow d-flex flex-column justify-content-center'>Slide 2</SwiperSlide>
-      <SwiperSlide className='section  yellow d-flex flex-column justify-content-center'>Slide 3</SwiperSlide>
-      <SwiperSlide className='section   yellow d-flex flex-column justify-content-center'>Slide 4</SwiperSlide>
-      <SwiperSlide className='section   yellow d-flex flex-column justify-content-center'>Slide 4</SwiperSlide>
-      <SwiperSlide className='section   yellow d-flex flex-column justify-content-center'>Slide 4</SwiperSlide>
-      <SwiperSlide className='section   yellow d-flex flex-column justify-content-center'>Slide 4</SwiperSlide>
-      {/* Add more slides as needed */}
+        {
+          db.swipersection.map((v, i) =>{
+            return <SwiperSlide className={v.cls}>{v.content}</SwiperSlide>
+          })
+        
+        }
+    
+    
     </Swiper>
 
         </>
