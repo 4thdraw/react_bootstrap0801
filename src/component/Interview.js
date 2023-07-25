@@ -1,14 +1,13 @@
 import React from 'react'
 
-
-export function Interview(props) {
-    
+export function Interview(props) {  
 
     return (
         <>
            <div  id={props.id} className="section" 
-           style={{ background : `${props.obj.bgimg}` }}>
-           <h2>{ props.h2 }</h2>
+           style={{ background : `url(${props.obj.bgimg}) no-repeat ` , backgroundSize : "100% auto"}}>
+           <h2>{ props.h2  }</h2>
+          
            <ul>
           {
              props.obj.content.map((v, i) =>{
@@ -24,7 +23,6 @@ export function Interview(props) {
 
           }
           </ul>
-
         </div>  
         </>
     )
