@@ -121,12 +121,13 @@ function App() {
         <Skill title={db.skill} id={db.navi[0].href} >
                                 
         </Skill>
-
+        </Container>
         <Interview h2="사전인터뷰" id={db.navi[2].href} obj={db.interview}>
 
         </Interview>
+        <Container>
         <Form h2='면접제안' id={db.navi[3].href} ></Form>
-      </Container>
+        </Container>
     </div>
   );
 }

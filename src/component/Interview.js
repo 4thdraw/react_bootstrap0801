@@ -1,4 +1,5 @@
 import React from 'react'
+import {  Container } from 'react-bootstrap';
 
 export function Interview(props) {  
 
@@ -6,6 +7,7 @@ export function Interview(props) {
         <>
            <div  id={props.id} className="section" 
            style={{ background : `url(${props.obj.bgimg}) no-repeat ` , backgroundSize : "100% auto"}}>
+            <Container>
            <h2>{ props.h2  }</h2>
           
            <ul>
@@ -23,6 +25,7 @@ export function Interview(props) {
 
           }
           </ul>
+          </Container>
         </div>  
         </>
     )
