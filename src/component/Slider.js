@@ -38,8 +38,17 @@ export function Slider(props) {
         className="mySwiper"
     >
         {
+          
           db.swipersection.map((v, i) =>{
-            return <SwiperSlide className={v.cls}>{v.content}</SwiperSlide>
+            return <SwiperSlide className={v.cls}><p>{
+                  
+                     v.content.split("|").map(( x, idx) =>{
+                      return <p>{x}</p>
+
+                     })
+                    
+                     
+              }</p></SwiperSlide>
           })
         
         }

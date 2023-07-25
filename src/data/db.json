@@ -26,7 +26,7 @@
     "swipersection" : [
         {
             "cls" : "section  yellow d-flex flex-column justify-content-center",
-            "content" : "태그를 넣게 되면 그대로 글자로 출력되니 태그를 뺀 텍스트데이터만 넣어야 함"
+            "content" : "태그를 넣게 되면 | 그대로 글자로 출력되니 | 태그를 뺀 텍스트데이터만 넣어야 함"
         },
         {
             "cls" : "section  bg-dark d-flex flex-column justify-content-center",
