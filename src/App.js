@@ -122,7 +122,7 @@ function App() {
                                 
         </Skill>
 
-        <Interview h2="사전인터뷰" id={db.navi[2].href} map={db.interview}>
+        <Interview h2="사전인터뷰" id={db.navi[2].href} obj={db.interview}>
 
         </Interview>
         <Form h2='면접제안' id={db.navi[3].href} ></Form>
