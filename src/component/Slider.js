@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import db from '../data/db.json'
+
 
 import 'swiper/css';
 
@@ -39,10 +39,10 @@ export function Slider(props) {
     >
         {
           
-          db.swipersection.map((v, i) =>{
+          props.map.map((v, i) =>{
             return <SwiperSlide className={v.cls}><p>{
                   
-                     v.content.split("|").map(( x, idx) =>{
+                     v.content.split("<br>").map(( x, idx) =>{
                       return <p>{x}</p>
 
                      })

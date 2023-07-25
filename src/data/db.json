@@ -26,7 +26,7 @@
     "swipersection" : [
         {
             "cls" : "section  yellow d-flex flex-column justify-content-center",
-            "content" : "태그를 넣게 되면 | 그대로 글자로 출력되니 | 태그를 뺀 텍스트데이터만 넣어야 함"
+            "content" : "태그를 넣게 되면 <br> 그대로 글자로 출력되니 <br> 태그를 뺀 텍스트데이터만 넣어야 함"
         },
         {
             "cls" : "section  bg-dark d-flex flex-column justify-content-center",
@@ -52,5 +52,23 @@
             "cls" : "section  bg-primary d-flex flex-column justify-content-center",
             "content" : "슬라이드1"
         }
-    ]
+    ],
+    "interview" : {
+        "bgimg" : "https://img.cjthemarket.com/images/file/display/112/20230712181958699.jpg",
+        "content" : [
+        {
+            "Q" : "전공아닌 비전공자가 진로선택 이유" ,
+            "A" : "쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당 <br> 쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당<br> 쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당<br> 쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당<br> 쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당<br> 쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당"
+        } ,
+        {
+            "Q" : "전공아닌 비전공자가 진로선택 이유" ,
+            "A" : "쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당"
+        } ,
+        {
+            "Q" : "전공아닌 비전공자가 진로선택 이유" ,
+            "A" : "쉽지 않은 선택이었지만 어쩌고 이유가 저쩌고입니당"
+        } 
+        ]
+    }
+
 }

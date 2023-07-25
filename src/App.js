@@ -116,13 +116,13 @@ function App() {
         </Container>
       </Navbar>
      
-        <Slider ></Slider>
+        <Slider map={db.swipersection}></Slider>
         <Container>
-        <Skill title={db.skill} id={db.navi[0].href}>
+        <Skill title={db.skill} id={db.navi[0].href} >
                                 
         </Skill>
 
-        <Interview h2="사전인터뷰" id={db.navi[2].href}>
+        <Interview h2="사전인터뷰" id={db.navi[2].href} map={db.interview}>
 
         </Interview>
         <Form h2='면접제안' id={db.navi[3].href} ></Form>
